@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation</title>
+    <link rel="stylesheet" href="/static/CSS/fertilizer recommendation.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Farm<span>Easy</span></h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Prediction</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="/crop_pr">Crop Prediction</a></li>
+                            <li><a href="/yield_pr">Yield Prediction</a></li>
+                            <li><a href="/ra_pre">Rainfall Prediction</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Recommendation</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="/crop_recommendation">Crop Recommendation</a></li>
+                            <li><a href="/fert_recommendation">Fertilizer Recommendation</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>Fertilizer <span>Recommendation</span></h1>
+        <form action="/recommend_fertilizer" method="POST">
+
+            <label for="Temperature">Temperature:</label>
+            <input type="number" id="Temperature" name="Temperature" step="1" min="0" value="" required
+                placeholder="Temperature Eg:26">
+
+            <label for="Humidity">Humidity:</label>
+            <input type="number" id="Humidity" name="Humidity" step="1" min="0" value="" required
+                placeholder="Humidity Eg:52">
+
+            <label for="Soil_Moisture">Soil Moisture:</label>
+            <input type="number" id="Soil_Moisture" name="Soil Moisture" step="1" min="0" value="" required
+                placeholder="Soil Moisture Eg:66">
+
+            <label for="Soil Type">Soil Type:</label>
+            <select id="Soil Type" name="Soil Type" required>
+                <option value="">Select a Soil Type (eg. Loamy)</option>
+                <option value="Sandy">Sandy</option>
+                <option value="Loamy">Loamy</option>
+                <option value="Black">Black</option>
+                <option value="Red">Red</option>
+                <option value="Clayey">Clayey</option>
+            </select>
+
+            <label for="Crop Type">Crop Type:</label>
+            <select id="Crop Type" name="Crop Type" required>
+                <option value="">Select a Crop Type (eg. Cotton)</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Sugarcane">Sugarcane</option>
+                <option value="Wheat">Wheat</option>
+                <option value="Tobacco">Tobacco</option>
+                <option value="Paddy">Paddy</option>
+                <option value="Maize">Maize</option>
+                <option value="Barley">Barley</option>
+                <option value="Millets">Millets</option>
+                <option value="Oil seeds">Oil seeds</option>
+                <option value="Pulses">Pulses</option>
+                <option value="Ground Nuts">Groundnut</option>
+            </select>
+
+            <label for="Nitrogen">Nitrogen:</label>
+            <input type="number" id="Nitrogen" name="Nitrogen" step="1" min="0" value="" required
+                placeholder="Nitrogen Eg:37">
+
+            <label for="Potassium">Potassium:</label>
+            <input type="number" id="Potassium" name="Potassium" step="0" min="0" value="" required
+                placeholder="Potassium Eg:0">
+
+            <label for="Phosphorus">Phosphorus:</label>
+            <input type="number" id="Phosphorus" name="Phosphorus" step="0" min="0" value="" required
+                placeholder="Phosphorus Eg:0">
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container">
+        <h4>Result:</h4>
+        <p><strong>{{ result }}</strong></p> <!-- This will be dynamically updated with the result from Flask -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction</title>
+    <link rel="stylesheet" href="/static/CSS/Rainfall prediction.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Farm<span>Easy</span></h1>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#">Prediction</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="/crop_pr">Crop Prediction</a></li>
+                        <li><a href="/yield_pr">Yield Prediction</a></li>
+                        <li><a href="/ra_pre">Rainfall Prediction</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Recommendation</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="/crop_recommendation">Crop Recommendation</a></li>
+                        <li><a href="/fert_recommendation">Fertilizer Recommendation</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+    <div class="container">
+        <h1>Rainfall <span>Prediction</span></h1>
+        <form action="/predict_rain" method="post">
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+              <option value="">Select a Region</option>
+              <option value="ANDAMAN & NICOBAR ISLANDS">ANDAMAN & NICOBAR ISLANDS</option>
+              <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+              <option value="ASSAM & MEGHALAYA">ASSAM & MEGHALAYA</option>
+              <option value="NAGA MANI MIZO TRIPURA">NAGA MANI MIZO TRIPURA</option>
+              <option value="SUB HIMALAYAN WEST BENGAL & SIKKIM">SUB HIMALAYAN WEST BENGAL & SIKKIM</option>
+              <option value="GANGETIC WEST BENGAL">GANGETIC WEST BENGAL</option>
+              <option value="ORISSA">ORISSA</option>
+              <option value="JHARKHAND">JHARKHAND</option>
+              <option value="BIHAR">BIHAR</option>
+              <option value="EAST UTTAR PRADESH">EAST UTTAR PRADESH</option>
+              <option value="WEST UTTAR PRADESH">WEST UTTAR PRADESH</option>
+              <option value="UTTARAKHAND">UTTARAKHAND</option>
+              <option value="HARYANA DELHI & CHANDIGARH">HARYANA DELHI & CHANDIGARH</option>
+              <option value="PUNJAB">PUNJAB</option>
+              <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+              <option value="JAMMU & KASHMIR">JAMMU & KASHMIR</option>
+              <option value="WEST RAJASTHAN">WEST RAJASTHAN</option>
+              <option value="EAST RAJASTHAN">EAST RAJASTHAN</option>
+              <option value="WEST MADHYA PRADESH">WEST MADHYA PRADESH</option>
+              <option value="EAST MADHYA PRADESH">EAST MADHYA PRADESH</option>
+              <option value="GUJARAT REGION">GUJARAT REGION</option>
+              <option value="SAURASHTRA & KUTCH">SAURASHTRA & KUTCH</option>
+              <option value="KONKAN & GOA">KONKAN & GOA</option>
+              <option value="MADHYA MAHARASHTRA">MADHYA MAHARASHTRA</option>
+              <option value="MATATHWADA">MATATHWADA</option>
+              <option value="VIDARBHA">VIDARBHA</option>
+              <option value="CHHATTISGARH">CHHATTISGARH</option>
+              <option value="COASTAL ANDHRA PRADESH">COASTAL ANDHRA PRADESH</option>
+              <option value="TELANGANA">TELANGANA</option>
+              <option value="RAYALSEEMA">RAYALSEEMA</option>
+              <option value="TAMIL NADU">TAMIL NADU</option>
+              <option value="COASTAL KARNATAKA">COASTAL KARNATAKA</option>
+              <option value="NORTH INTERIOR KARNATAKA">NORTH INTERIOR KARNATAKA</option>
+              <option value="SOUTH INTERIOR KARNATAKA">SOUTH INTERIOR KARNATAKA</option>
+              <option value="KERALA">KERALA</option>
+              <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+            </select>
+      
+            
+      
+            <label for="month">Month:</label>
+            <select id="month" name="month" required>
+              <option value="">Select a month</option>
+              <option value="JAN">January</option>
+              <option value="FEB">February</option>
+              <option value="MAR">March</option>
+              <option value="APR">April</option>
+              <option value="MAY">May</option>
+              <option value="JUN">June</option>
+              <option value="JUL">July</option>
+              <option value="AUG">August</option>
+              <option value="SEP">September</option>
+              <option value="OCT">October</option>
+              <option value="NOV">November</option>
+              <option value="DEC">December</option>
+            </select>
+
+      
+            <button type="submit">Predict</button>
+          </form>
+        </div>
+        <div class="container">
+          <h4>Result:</h4>
+          <p><strong>{{ prediction }} mm</strong></p>
+        
+    </div>
+        
+      
+
+
+</body>
+</html>

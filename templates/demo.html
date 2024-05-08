@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmEasy</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("/static/Images/demo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            position: sticky;
+            position: fixed;
+            width: 98%;
+            top: 0;
+            z-index: 1000;
+            background: transparent;
+            backdrop-filter: blur(20px);
+        }
+
+        .logo h1 {
+            color: white;
+            font-size: 24px;
+            margin-left: 30px;
+        }
+
+        .logo span {
+            color: rgb(156 182 28);
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .menu li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+            font-size: 18px;
+
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .submenu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .submenu ul li {
+            margin: 0;
+        }
+
+        .submenu ul li a {
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .submenu ul li a:hover {
+            background-color: rgb(7, 134, 7);
+        }
+
+        footer{
+            bottom: 0px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            backdrop-filter: blur(20px);
+        }
+
+       /* .row1{
+            width:100%;
+            margin:1% 50%;
+            padding:2% 0%;
+            color:rgb(255, 255, 255);
+            font-size:0.8em;
+            bottom: 0;
+
+            } */
+            
+            .row2{
+                width:100%;
+                margin:5% 85%;
+                padding:10% 0%;
+                color:rgb(255, 255, 255);
+                font-size:0.8em;
+                bottom: 0;
+                margin-left: 260%;
+    
+                }
+    
+            /*.footer .row1 a{
+            text-decoration:none;
+            color:rgb(255, 255, 255);
+            transition:0.5s;
+            
+            }
+            
+            .footer .row1 a:hover{
+            color:grey;
+            }
+            
+            .footer .row1 ul li{
+            display:inline-block;
+            margin:0px 50px;
+            }*/
+
+  
+
+            p{
+                color: white;
+                font-size: 18px;
+            }
+
+            .title{
+                width: 40%;
+                margin: 0 auto;
+                margin-top: 10%;
+                color: rgb(255, 255, 255);
+                margin-left: 35%;
+            }
+            .title h1{
+                margin-left: 20%;
+                font-size: 60px;
+            }
+            .title h1 span{
+                font-size: 60px;
+                color: rgb(6, 142, 15);
+            }
+
+            .title p{
+                font-size: 40px;
+                
+            }
+
+            .container2 {
+                width: 70%;
+                margin:0 auto;
+                transition:0.5s;
+                margin-top: 7%;
+                border: 2px solid #ccc;
+                box-shadow: 0px 0px 10px #ccc;
+                border-radius: 20px;
+            }
+
+            .container2 h1{
+
+                margin-left: 40%;
+                font-size: 40px;
+                color: white;
+            }
+            .container2 h3{
+                font-size: 25px;
+                color: white;
+                margin: 25px;
+            }
+            .container2 p{
+                margin: 25px;
+        
+            }
+
+
+            .container3 ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 85%;
+                padding: 0px;
+                margin: 0;
+                list-style: none;
+                margin-bottom: 5%;
+                margin-top: 3%;
+                margin-left:8%;
+                
+              }
+              .container3 h1{
+                color: white;
+                margin-top: 8%;
+                margin-left: 43%;
+                font-size: 40px;
+              }
+              
+              .container3 li {
+                width: 30%;
+                padding: 25px;
+                border: 2px solid #ccc;
+                box-shadow: 0px 0px 10px #ccc;
+              }
+            .container3 li:nth-child(2) {
+                width: 40%;
+              }
+            .container3 ul li{
+                display:inline-block;
+                margin:0px 30px;
+            }
+
+           
+            .container4 h1{
+                color: white;
+                margin-left: 60px;
+                padding-bottom: 10px;
+            }
+
+            
+            .container5 h1{
+                color: white;
+                margin-left: 90px;
+                padding-bottom: 10px;
+            }
+
+            
+            .container6 h1{
+                color: white;
+                margin-left: 70px;
+                padding-bottom: 10px;
+            }
+
+            .container4,
+            .container5,
+            .container6 {
+            width: 90%;
+            padding: 30px;
+            border: none;
+            box-shadow: none;
+            
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Farm<span>Easy</span></h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Prediction</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="/crop_pr">Crop Prediction</a></li>
+                            <li><a href="/yield_pr">Yield Prediction</a></li>
+                            <li><a href="/ra_pre">Rainfall Prediction</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Recommendation</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="/crop_recommendation">Crop Recommendation</a></li>
+                            <li><a href="/fert_recommendation">Fertilizer Recommendation</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title">
+         <h1>Farm<span>Easy</span></h1>
+        <p>Revolutionize Farming with us!</p>
+    </div>
+    
+
+    <div class="container2">
+        <h1 class="about">About Us</h1>
+        <h3>Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase
+            Profit.</h3>
+        <p>We use machine learning technologies to help you
+            guide through
+            the entire farming process. Make informed decisions to understand the demographics of your area,
+            understand the
+            factors that affect your crop,yield and keep them healthy for a super awesome successful yield.</p>
+    </div>
+
+    <div class="container3">
+        <h1>Our Services</h1>
+        <ul>
+            <li><div class="container4">
+                <h1>Crop</h1>
+                <p> Prediction and Recommendation service identifies optimal crops for specific conditions, enhancing 
+                    agricultural decision-making.</p>
+            </div>
+             </li>
+            <li><div class="container5">
+                <h1>Fertilizer</h1>
+                <p> Recommendation service suggests the ideal fertilizer type for specific soil conditions 
+                    optimizing growth and yield.</p>
+            </div></li>
+            <li><div class="container6">
+                <h1>Yield</h1>
+                <p> Prediction accurately calculates crop yields, enabling informed decisions for optimized planning and increased productivity.</p>
+            </div></li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <!-- This is another comment -->
+          <!--  <div class="row1">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div> -->
+
+            <div class="row2">
+                 © Copyright  2024 FarmEasy , All rights reserved
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

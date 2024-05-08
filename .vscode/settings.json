@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Farmmm/Farm/model/Rainfall Prediction"
+    ]
+}

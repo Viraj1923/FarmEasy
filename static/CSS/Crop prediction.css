@@ -1,0 +1,157 @@
+body {
+    background-image: url("/static/Images/prediction\ image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: sticky;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000; 
+    background: transparent;
+    backdrop-filter: blur(50px);
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.logo span {
+    color: rgb(156 182 28);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+   
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+}
+  
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu ul li {
+    margin: 0;
+}
+
+.submenu ul li a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.submenu ul li a:hover {
+    background-color: rgb(7, 134, 7);
+}
+
+.container {
+	width: 30%;
+	margin: 0 auto;
+	padding: 30px;
+    margin-top: 10%;
+	border: 2px solid #ccc;
+	box-shadow: 0px 0px 10px #ccc;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    font-weight: bold;
+    border-radius: 27px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+    color: #ffffff;
+}
+
+h1 span{
+    color:#ffffff ;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+    font-size: 18px;
+}
+
+select{
+	width: 100%;
+	padding: 7px;
+	margin-bottom: 15px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding-left: 20px;
+    font-size: 13px;
+}
+
+button {
+	color: white;
+	cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+	margin-top: 15px;
+    border: 2px solid #ccc;
+	box-shadow: 0px 0px 10px #ccc;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+button:hover {
+	background-color: hsl(120, 93%, 27%);
+}
+
+p{
+    font-size: 20px;
+    color: #ffffff;
+}

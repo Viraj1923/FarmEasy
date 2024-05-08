@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation</title>
+    <link rel="stylesheet" href="/static/CSS/crop recommendation.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Farm<span>Easy</span></h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Prediction</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="/crop_pr">Crop Prediction</a></li>
+                            <li><a href="/yield_pr">Yield Prediction</a></li>
+                            <li><a href="/ra_pre">Rainfall Prediction</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Recommendation</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="/crop_recommendation">Crop Recommendation</a></li>
+                            <li><a href="/fert_recommendation">Fertilizer Recommendation</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>Crop <span>Recommendation</span></h1>
+        <form action="/rec_cr" method="post">
+
+            <label for="N">NITROGEN:</label>
+            <input type="number" id="N" name="Nitrogen" step="0.01" min="0" value="" required placeholder="Enter Nitrogen value (e.g., 37)">
+
+            <label for="P">PHOSPHOROUS:</label>
+            <input type="number" id="P" name="Phosporus" step="0.01" min="0" value="" required placeholder="Enter Phosphorous value (e.g., 0)">
+
+            <label for="K">POTASSIUM:</label>
+            <input type="number" id="K" name="Potassium" step="0.01" min="0" value="" required placeholder="Enter Potassium value (e.g., 0)">
+
+            <label for="temperature">TEMPERATURE:</label>
+            <input type="number" id="temperature" name="Temperature" step="0.01" min="0" value="" required placeholder="Enter Temperature value (e.g., 26)">
+
+            <label for="humidity">HUMIDITY:</label>
+            <input type="number" id="humidity" name="Humidity" step="0.01" min="0" value="" required placeholder="Enter Humidity value (e.g., 52)">
+
+            <label for="ph">PH:</label>
+            <input type="number" id="ph" name="ph" step="0.01" min="0" value="" required placeholder="Enter pH value (e.g., 6.5)">
+
+            <label for="rainfall">RAINFALL:</label>
+            <input type="number" id="rainfall" name="Rainfall" step="1" min="0" value="" required placeholder="Enter Rainfall value (e.g., 203)">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container">
+        <h4>Result:</h4>
+        <p font-weight=bold>{{ result }}</p> <!-- This will be dynamically updated with the result from Flask -->
+    </div>
+</body>
+</html>
