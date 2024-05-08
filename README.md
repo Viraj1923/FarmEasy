@@ -1,6 +1,3 @@
-detailed and informative, covering various aspects of your project. Here's an expanded version of the README:
-
-```markdown
 # FarmEasy
 
 FarmEasy is a comprehensive web application aimed at assisting farmers with various agricultural tasks, leveraging machine learning algorithms and data analysis techniques.
