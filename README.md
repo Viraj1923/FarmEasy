@@ -70,6 +70,7 @@ For any inquiries or feedback, contact at [virajmulik2304@gmail.com](mailto:vira
 [digvijaypawar.kit@gmail.com](mailto:digvijaypawar.kit@gmail.com).
 
 ...
-![Home](static/Screenshot 2024-05-08 235739.png)
+![Screenshot](static/Screenshot%202024-05-08%20235739.png)
+
 
 
