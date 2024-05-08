@@ -57,9 +57,8 @@ Recommends suitable fertilizers based on soil type, crop type, and nutrient requ
 ## Contributors
 
 - [Viraj Mulik](mailto:virajmulik2304@gmail.com)
-- [Onkar Giri](mailto:example@example.com)
-- [Shreya Chavan](mailto:example@example.com)
-- [Digvijay Pawar](mailto:example@example.com)
+- [Onkar Giri](mailto:onkargiri29@gmail.com)
+- [Digvijay Pawar](mailto:digvijaypawar.kit@gmail.com)
 
 ## License
 
@@ -70,4 +69,4 @@ This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](L
 For any inquiries or feedback, please contact Viraj Mulik at [virajmulik2304@gmail.com](mailto:virajmulik2304@gmail.com).
 ```
 
-Feel free to adjust the content to better fit your project's specifics or add any additional sections as needed. Once you're satisfied with the README, commit and push it to your GitHub repository to make it available to others.
+
