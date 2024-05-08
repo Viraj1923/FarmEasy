@@ -69,5 +69,7 @@ This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](L
 For any inquiries or feedback, contact at [virajmulik2304@gmail.com](mailto:virajmulik2304@gmail.com).
 [digvijaypawar.kit@gmail.com](mailto:digvijaypawar.kit@gmail.com).
 
+...
+![Home](static/Screenshot 2024-05-08 235739.png)
 
 
