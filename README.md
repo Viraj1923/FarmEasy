@@ -72,5 +72,12 @@ For any inquiries or feedback, contact at [virajmulik2304@gmail.com](mailto:vira
 ...
 ![Screenshot](static/Screenshot%202024-05-08%20235739.png)
 
+...
+![Image Description](static/2.png)
+
+...
+![Image Description](static/3.png)
+
+
 
 
