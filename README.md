@@ -28,7 +28,6 @@ Recommends suitable fertilizers based on soil type, crop type, and nutrient requ
 
    ```bash
    git clone https://github.com/YourUsername/FarmEasy.git
-   ```
 
 2. Install dependencies:
 
